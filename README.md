@@ -45,6 +45,6 @@ To run and/or develop on the chat frontend, please check the README.md under `fr
 
 ![michael_and_pam.png](media%2Fmichael_and_pam.png)
 
-https://github.com/Mathilde94/character_ai_office/assets/1518309/b9a78c7a-39be-404f-940b-c42d3719f7fa
+https://github.com/Mathilde94/ai_conversations_with_famous_characters/assets/1518309/e740834e-80a9-4fff-b69b-32f622d97aca
 
 
