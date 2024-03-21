@@ -3,7 +3,9 @@
 ## Introduction
 This project is a simple implementation of a chat between famous movie characters where you impersonate one of them (for this case here, characters are from the show `The Office`). 
 
-https://github.com/Mathilde94/character_ai_office/assets/1518309/bb8bc9e8-88e2-4a51-8ca5-a9058748fe84
+
+https://github.com/Mathilde94/ai_conversations_with_famous_characters/assets/1518309/031dafc2-fa5c-42d6-8978-1e0e6e74e3c4
+
 
 ## Main Components
 
