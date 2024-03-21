@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "ChatProto";
+option java_package = "com.protobuf.rpc.chat.v1";
+
+package rpc.chat.v1;
+
+import "dto/chat/v1/chat.proto";
+
+message SendMessageStreamRequest {
+  dto.chat.v1.ChatMessage message = 1;
+  string chat_session_id = 2;
+}
+
+message SendMessageStreamResponse {
+  string chunk_message = 1;
+}
+
+message InitiateChatSessionRequest {
+  dto.chat.v1.Character character_simulated = 2;
+  dto.chat.v1.Character character_user = 3;
+}
+
+message InitiateChatSessionResponse {
+  dto.chat.v1.ChatSession chat_session = 1;
+}
+
+message GetChatSessionRequest {
+  string chat_session_id = 1;
+}
+
+message GetChatSessionResponse {
+  dto.chat.v1.ChatSession chat_session = 1;
+}
+
+message ResetChatSessionRequest {
+  string chat_session_id = 1;
+}
+
+message ResetChatSessionResponse {
+  dto.chat.v1.ChatSession chat_session = 1;
+}
+
+
+service ChatService {
+  rpc InitiateChatSession (InitiateChatSessionRequest) returns (InitiateChatSessionResponse);
+  rpc GetChatSession (GetChatSessionRequest) returns (GetChatSessionResponse);
+  rpc SendMessageStream(SendMessageStreamRequest) returns (stream SendMessageStreamResponse);
+  rpc resetChatSession (ResetChatSessionRequest) returns (ResetChatSessionResponse);
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'MyFont';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hello {
+    color: red;
+    font-family: 'MyFont';
+}

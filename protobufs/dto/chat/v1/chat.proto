@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "ChatProto";
+option java_package = "com.protobuf.dto.chat.v1";
+
+package dto.chat.v1;
+
+import "google/protobuf/timestamp.proto";
+
+
+message Character {
+  string name = 1;
+}
+
+message ChatMessage {
+  string role = 1;
+  string content = 2;
+  google.protobuf.Timestamp created_at = 3;
+  Character character = 4;
+}
+
+message ChatSession {
+  string uuid = 1;
+  Character character_simulated = 2;
+  Character character_user = 3;
+  repeated ChatMessage messages = 4;
+}

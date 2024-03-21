@@ -1,0 +1,23 @@
+spring:
+  cache:
+    redis:
+      port: 6379
+      hostname: localhost
+
+llm:
+  server:
+    hostname: localhost
+    port: 8080
+    uri: /completion
+
+management:
+  endpoint:
+    health:
+      enabled: false
+    info:
+      enabled: false
+
+grpc:
+  server:
+    port: 8083
+    reflection-service-enabled: true

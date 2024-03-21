@@ -1,0 +1,88 @@
+.conversation {
+    border: 2px solid #a435f0;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    min-width: 300px;
+    max-width: 700px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        height: 20px;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+        background-color:  #a435f0;
+        color: white;
+        display: flex;
+        flex-direction: row;
+
+        span {
+            flex-grow: 1;
+        }
+    }
+
+    .messages {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+
+    .message {
+        margin: 5px;
+        padding: 3px;
+
+        &.user {
+            align-items: flex-end;
+            text-align: end;
+            span {
+                border-radius: 5px 5px 0 5px;
+                background-color: lightblue;
+            }
+        }
+
+        span {
+            padding: 5px 10px 5px 10px;
+        }
+
+        &.simulated {
+            span {
+                border-radius: 5px 5px 0 5px;
+                background-color: whitesmoke;
+            }
+        }
+    }
+
+    form {
+        margin-top: 5px;
+        display: flex;
+    }
+
+    input {
+        border-top: 1px solid #a435f0;
+        flex-grow: 1;
+        height: 30px;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        padding-left: 15px;
+    }
+    input:focus {
+        outline: none;
+    }
+    input:active {
+        outline: none;
+    }
+
+    button {
+        border-top: 1px solid #a435f0;
+        background-color: #a435f0;
+        color: white;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        min-width: 80px;
+    }
+}

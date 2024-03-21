@@ -1,0 +1,41 @@
+.chat {
+    border: 2px solid #a435f0;
+    min-width: 300px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+
+    .options {
+        flex-grow: 1;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+
+        .character-option {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 5px;
+
+            > span {
+                min-width: 80px;
+            }
+
+            .Dropdown-root {
+                min-width: 80px;
+            }
+        }
+    }
+
+    button {
+        max-height: 30px;
+        margin: 10px;
+        border-top: 1px solid #a435f0;
+        background-color: #a435f0;
+        color: white;
+        border-bottom: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        min-width: 80px;
+    }
+}
